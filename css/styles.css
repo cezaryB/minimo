@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	margin: 0 auto;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(71, 71, 107, .7);
+}
+
+
+/* header and navigation menu */
+
+.minimo {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.main-nav ul {
+	margin: 0 auto;
+}
+
+.main-nav li {
+	font-family: "Playfair Display", serif;
+	color: rgba(71, 71, 107, .7);
+	font-size: 0.8rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 5px 0;
+}
+
+
+@media (min-width: 768px) {
+	
+	.minimo {
+		float: left;
+		padding-left: 40px;
+		padding-top: 40px;
+	}
+	
+	.main-nav ul {
+		float: right;
+		padding-top: 35px;
+		padding-right: 15px;
+	}
+	
+	.main-nav li {
+		display: inline-block;
+		padding: 5px 15px;
+		font-size: 0.9rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.minimo {
+		padding-left: 80px;
+	}
+	
+	.main-nav ul {
+		padding-right: 25px;
+	}
+	
+	.main-nav li {
+		padding: 5px 55px;
+		font-size: 1.1rem;
+	}
+}
+
