@@ -37,9 +37,22 @@ a {
 	padding: 5px 0;
 }
 
+.header-photo {
+	background-image: url("../images/Header_photo.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 600px;
+}
+
 .header-photo img {
 	margin: 0 auto;
 	width: 90%;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 @media (min-width: 768px) {
