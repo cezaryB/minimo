@@ -1,9 +1,14 @@
-* {
+*, *::before, *::after {
 	box-sizing: border-box;
 }
 
+:root {
+	font-size: 15px;
+}
+
 body {
-	background-color: #fff;
+	background: #fff;
+	color: #000;
 }
 
 a {
@@ -11,43 +16,42 @@ a {
 	color: rgba(71, 71, 107, .7);
 }
 
+a:hover, a:focus {
+	color: #000;
+}
+
 .container {
 	max-width: 1200px;
+	padding: 0 20px;
 	margin: 0 auto;
 	text-align: center;
 }
 
 /* header and navigation menu */
 
-.minimo {
+.logo {
 	padding-top: 30px;
 	padding-bottom: 20px;
 }
 
-.main-nav ul {
-	margin: 0 auto;
-}
 
 .main-nav li {
-	font-family: "Playfair Display", serif;
-	color: rgba(71, 71, 107, .7);
-	font-size: 0.8rem;
-	font-weight: 500;
-	text-transform: uppercase;
 	padding: 5px 0;
+	color: rgba(71, 71, 107, .7);
+	font: 0.8rem "Playfair Display", serif;
+	text-transform: uppercase;
+}
+
+.main-nav li:last-child {
+	padding-right: 0;
 }
 
 .header-photo {
-	background-image: url("../images/Header_photo.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 600px;
 	margin-bottom: 60px;
 }
 
 .header-photo img {
-	margin: 0 auto;
-	width: 90%;
+	max-width: 100%;
 }
 
 .clearfix:after {
@@ -60,30 +64,30 @@ a {
 
 .photo-diary {
 	width: 85%;
+	padding-bottom: 100px;
 	margin: 0 auto;
 	color: rgba(115, 115, 115, .9);
-	padding-bottom: 100px;
 }
 
 .photo-diary span {
 	display: block;
 	font-size: 0.9rem;
-	opacity: .6;
 	font-family: 'Ubuntu', sans-serif;
 	text-transform: uppercase;
+	opacity: .6;
 }
 
 .photo-diary h1 {
+	padding-bottom: 10px;
 	font-family: "Playfair Display", serif;
 	font-weight: normal;
-	padding-bottom: 10px;
 }
 
 .photo-diary p {
 	display: block;
+	padding-bottom: 40px;
 	font-family: "Playfair Display", serif;
 	font-size: 0.9rem;
-	padding-bottom: 40px;
 }
 
 
@@ -91,9 +95,10 @@ a {
 
 .articles-div {
 	width: 85%;
+	padding-top: 80px;
+	padding-bottom: 40px;
 	margin: 0 auto;
 	color: rgba(115, 115, 115, .9);
-	padding-bottom: 40px;
 }
 
 .article img {
@@ -103,10 +108,10 @@ a {
 
 .article span {
 	display: block;
-	font-size: 0.9rem;
-	opacity: .6;
 	font-family: 'Ubuntu', sans-serif;
+	font-size: 0.9rem;
 	text-transform: uppercase;
+	opacity: .6;
 }
 
 .article h1 {
@@ -116,61 +121,131 @@ a {
 
 .article p {
 	display: block;
+	padding-bottom: 30px;
 	font-family: "Playfair Display", serif;
 	font-size: 0.9rem;
-	padding-bottom: 30px;
 }
 
 
 /* Newsletter sign-up */
 
 .newsletter-div {
-	font-family: "Playfair Display", serif;
+	position: relative;
 	height: 260px;
 	background: #f2f2f2;
-	position: relative;
+	font-family: "Playfair Display", serif;
 	text-align: center;
 }
 
 .newsletter-div legend {
-	font-size: 1.4rem;
-	margin: 0 auto;
 	padding-top: 50px;
-
+	margin: 0 auto;
+	font-size: 1.4rem;
 }
 
 .newsletter-div input {
-	display: inline-block;
 	position: absolute;
 	top: 50%;
 	right: 20%;
+	display: inline-block;
 	width: 60%;
 	height: 30px;
-	font-size: 0.8rem;
 	border: none;
 	border-bottom: 2px solid #000;
 	background: #f2f2f2 url("../images/Send_icon.png") no-repeat right / 8%;
 	color: #000;
+	font-size: 0.8rem;
+}
+
+.newsletter-div input:focus {
+	outline: none;
 }
 
 
 .newsletter-div input::-webkit-input-placeholder {
-	color: #000;
-	
+	color: #000;	
 }
+
+
+/* Button load-more */
+
+.btn-div {
+	padding: 80px 0;
+}
+
+.btn {
+	display: block;
+	width: 180px;
+	height: 60px;
+	padding: 10px 0;
+	border: 1px solid ;
+	margin: 0 auto;
+	font: 1.4rem "Playfair Display", serfif;
+	text-align: center;
+}
+
+ .btn-div a {
+ 		display: block;
+ }
+
+
+ /* Footer */
+
+ .footer-div {
+ 		height: 90px;
+ 		background: #f2f2f2;
+ }
+
+ .bottom-nav {
+ 		float: left;
+ 		width: 50%;
+ 		padding: 30px 15px;
+ 		font: 700 0.7rem "Playfair Display", serfif;
+ 		text-align: left;
+
+ }
+
+ .bottom-nav a {
+ 	color: #000;
+ }
+
+ .social-div {
+ 	float: right;
+ 	width: 30%;
+ 	padding-top: 30px;
+ 	font: 0.7rem "Playfair Display", serfif;
+ }
+
+ .social-div h4 {
+ 	margin: 0;
+ 	text-align: center;
+ }
+
+ .social-div li {
+ 	display: inline-block;
+ 	padding: 4px 2px;
+
+ }
+
+ .social-div .social-img {
+ 	width: 12px;
+ }
+
 
 @media (min-width: 768px) {
 	
-	.minimo {
+	.container {
+		padding: 0 40px;
+	}
+
+	.logo {
 		float: left;
-		padding-left: 40px;
 		padding-top: 40px;
 	}
 	
 	.main-nav ul {
 		float: right;
 		padding-top: 35px;
-		padding-right: 15px;
 	}
 	
 	.main-nav li {
@@ -199,19 +274,37 @@ a {
 	}
 
 	.newsletter-div input {
+		width: 45%;
+		right: 28%;
 		background-size: 5%;
 		font-size: 0.9rem;
+	}
+
+	.bottom-nav li {
+		display: inline-block;
+		padding: 0 4px;
+		font-size: 0.8rem;
+	}
+
+	.social-div {
+		width: 22%;
+		margin-right: 15px;
+		font-size: 0.8rem;
+	}
+	.social-div h4 {
+		float: left;
+	}
+
+	.social-div .social-img {
+		position: relative;
+		bottom: 3px;
+		width: 15px;
+		display: block;
+		margin-right: 5px;
 	}
 }
 
 @media (min-width: 1024px) {
-	.minimo {
-		padding-left: 80px;
-	}
-	
-	.main-nav ul {
-		padding-right: 25px;
-	}
 	
 	.main-nav li {
 		padding: 5px 55px;
@@ -228,9 +321,9 @@ a {
 
 
 	.article {
-		width: 45%;
 		display: inline-block;
 		vertical-align: top;
+		width: 45%;
 		padding-bottom: 60px;
 	}
 
@@ -242,13 +335,31 @@ a {
 		width: 100%;
 	}
 
-	#article-01, #article-03 {
+	#article-01, #article-03, #article-05 {
 		margin-right: 60px;
 	}
 
 	.newsletter-div input {
 		height: 40px;
+		width: 38%;
 		background-size: 4%;
+	}
+
+	.bottom-nav li {
+		padding: 0 8px;
+		font-size: 0.9rem;
+	}
+
+	.social-div {
+		width: 15%;
+	}
+
+	.social-div h4 {
+		font-size: 0.9rem;
+	}
+
+	.social-div .social-img {
+		width: 18px;
 	}
 
 }
