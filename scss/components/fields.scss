@@ -1,0 +1,34 @@
+/* Newsletter sign-up */
+
+.newsletter-field {
+	height: 260px;
+	background: #f2f2f2;
+	text-align: center;
+}
+
+.newsletter-field legend {
+	padding-top: 50px;
+	margin: 40px auto;
+	font-size: 1.4rem;
+}
+
+.newsletter-field input {
+	display: inline-block;
+	width: 60%;
+	height: 30px;
+	border: none;
+	border-bottom: 2px solid #000;
+	background: #f2f2f2 url("../images/Send_icon.png") no-repeat right / 8%;
+	color: #000;
+	font-size: 0.8em;
+}
+
+.newsletter-field input:focus {
+	outline: none;
+}
+
+
+.newsletter-field input::-webkit-input-placeholder, .newsletter-field input::-moz-placeholder,
+.newsletter-field input:-ms-input-placeholder, .newsletter-field input:-moz-placeholder  {
+	color: #000;	
+}

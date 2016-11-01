@@ -1,0 +1,32 @@
+/* header and navigation menu */
+
+.logo {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+
+.main-nav li {
+	padding: 5px 0;
+	color: rgba(71, 71, 107, .7);
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+.main-nav li:last-child {
+	padding-right: 0;
+}
+
+.header-photo {
+	margin-bottom: 60px;
+}
+
+.header-photo img {
+	width: 100%;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
