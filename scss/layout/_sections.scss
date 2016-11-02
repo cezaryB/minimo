@@ -1,0 +1,42 @@
+/* Photodiary */
+
+.photo-diary {
+	padding-bottom: 100px;
+	margin: 0 auto;
+	color: $medium-grey;
+	span {
+		display: block;
+		font-size: 0.9em;
+		font-family: $ubuntu;
+		text-transform: uppercase;
+		opacity: .6;
+	}
+	h1 {
+		padding-bottom: 10px;
+	}
+}
+
+
+/* Div with 4 articles */
+
+.articles-wrapper {
+	padding-top: 80px;
+	padding-bottom: 40px;
+	margin: 0 auto;
+	color: $medium-grey;
+}
+
+.article { 
+	img {
+		width: 90%;
+		padding-bottom: 30px;
+	}
+	span {
+		display: block;
+		font-family: $ubuntu;
+		font-size: 0.9em;
+		text-transform: uppercase;
+		opacity: .6;
+	}
+}
+

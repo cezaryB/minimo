@@ -1,0 +1,34 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 15px;
+}
+
+body {
+	background: #fff;
+	color: $black;
+	font-family: $playfair;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: $dark-grey;
+}
+
+a:hover, a:focus {
+	color: $black;
+}
+
+p {
+	display: block;
+	padding-bottom: 30px;
+	font-size: 0.9em;
+}
+
+h1 {
+	font-size: 1.8em;
+	font-weight: normal;
+}
