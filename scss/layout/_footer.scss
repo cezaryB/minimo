@@ -7,15 +7,23 @@
  	float: left;
  	width: 55%;
  	padding: 30px 15px;
+ 	margin: 0;
  	font: 700 0.7em;
  	text-align: left;
-
+ 	li {
+ 		color: $black;
+ 		font-size: 0.8em;
+ 		@media (min-width: 768px) {
+ 			display: inline-block;
+			padding: 0 4px;
+			font-size: 1em;
+ 		}
+ 		@media (min-width: 1024px) {
+ 			padding: 0 8px;
+ 		}
+ 	}
  }
 
- .bottom-nav li {
- 	color: $black;
- 	font-size: 0.8em;
- }
 
  .social-links {
  	float: right;
@@ -26,6 +34,10 @@
  		margin: 0;
  		@extend %centered;
  	}
+ 	ul {
+ 		padding: 0;
+ 		margin: 0;
+ 	}
  	li {
 	 	display: inline-block;
 	 	padding: 4px 2px;
@@ -33,5 +45,30 @@
  	.social-img {
  		width: 12px;
  	}
+ 	@media (min-width: 768px) {
+ 		width: 22%;
+		margin-right: 15px;
+		font-size: 0.8em;
+		h4 {
+			float: left;
+			font-size: 1em;
+		}
+		.social-img {
+			position: relative;
+			bottom: 3px;
+			width: 15px;
+			display: block;
+			margin-right: 5px;
+		}
+ 	}
+ 	@media (min-width: 1024px) {
+ 		width: 15%;
+ 		h4 {
+ 			font-size: 1.1em;
+ 		}
+ 		.social-img {
+			width: 18px;
+		}
+ 	}	
  }
 

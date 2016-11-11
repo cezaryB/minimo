@@ -3,8 +3,18 @@
 	padding: 0 20px;
 	margin: 0 auto;
 	@extend %centered;
+	@media (min-width: 768px) {
+		padding: 0 40px;
+	}
 }
 
 .narrow {
 	width: 85%;
+	@media (min-width: 768px) {
+		width: 80%;
+		text-align: left;
+	}
+	@media (min-width: 1024px) {
+		width: 75%;
+	}
 }
