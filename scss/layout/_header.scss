@@ -3,7 +3,7 @@
 .logo {
 	padding-top: 30px;
 	padding-bottom: 20px;
-	@media (min-width: 768px) {
+	@include tablet {
 		float: left;
 		padding-top: 40px;
 	}
@@ -21,7 +21,7 @@
 			padding-right: 0;
 		}
 	}
-	@media (min-width: 768px) {
+	@include tablet {
 		li {
 			display: inline-block;
 			padding: 5px 15px;
@@ -32,7 +32,7 @@
 			padding-top: 35px;
 		}
 	}
-	@media (min-width: 1024px) {
+	@include desktop {
 		li {
 			padding: 5px 55px;
 			font-size: 1.1em;

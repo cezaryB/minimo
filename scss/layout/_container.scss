@@ -3,18 +3,18 @@
 	padding: 0 20px;
 	margin: 0 auto;
 	@extend %centered;
-	@media (min-width: 768px) {
+	@include tablet {
 		padding: 0 40px;
 	}
 }
 
 .narrow {
 	width: 85%;
-	@media (min-width: 768px) {
+	@include tablet {
 		width: 80%;
 		text-align: left;
 	}
-	@media (min-width: 1024px) {
+	@include desktop {
 		width: 75%;
 	}
 }

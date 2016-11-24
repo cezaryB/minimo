@@ -38,12 +38,12 @@
 		text-transform: uppercase;
 		opacity: .6;
 	}
-	@media (min-width: 768px) {
+	@include tablet {
 		img {
 			width: 80%;
 		}
 	}
-	@media (min-width: 1024px) {
+	@include desktop {
 		display: inline-block;
 		vertical-align: top;
 		width: 45%;

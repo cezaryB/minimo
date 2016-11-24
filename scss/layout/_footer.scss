@@ -13,12 +13,12 @@
  	li {
  		color: $black;
  		font-size: 0.8em;
- 		@media (min-width: 768px) {
+ 		@include tablet {
  			display: inline-block;
 			padding: 0 4px;
 			font-size: 1em;
  		}
- 		@media (min-width: 1024px) {
+ 		@include desktop {
  			padding: 0 8px;
  		}
  	}
@@ -45,7 +45,7 @@
  	.social-img {
  		width: 12px;
  	}
- 	@media (min-width: 768px) {
+ 	@include tablet {
  		width: 22%;
 		margin-right: 15px;
 		font-size: 0.8em;
@@ -61,7 +61,7 @@
 			margin-right: 5px;
 		}
  	}
- 	@media (min-width: 1024px) {
+ 	@include desktop {
  		width: 15%;
  		h4 {
  			font-size: 1.1em;

@@ -11,7 +11,7 @@
 		padding-top: 50px;
 		margin: 40px auto;
 		font-size: 1.4rem;
-		@media (min-width: 768px) {
+		@include tablet {
 			font-size: 1.6em;
 		}
 	}
@@ -25,13 +25,13 @@
 		background: $light-grey url("#{$img-path}/Send_icon.png") no-repeat right / 8%;
 		color: $black;
 		font-size: 0.8em;
-		@media (min-width: 768px) {
+		@include tablet {
 			width: 45%;
 			right: 28%;
 			background-size: 5%;
 			font-size: 0.9em;
 		}
-		@media (min-width: 1024px) {
+		@include desktop {
 			height: 40px;
 			width: 28%;
 			background-size: 4%;
