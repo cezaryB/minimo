@@ -1,0 +1,74 @@
+ .footer {
+ 	height: 90px;
+ 	background: $light-grey;
+ }
+
+ .bottom-nav {
+ 	float: left;
+ 	width: 55%;
+ 	padding: 30px 15px;
+ 	margin: 0;
+ 	font: 700 0.7em;
+ 	text-align: left;
+ 	li {
+ 		color: $black;
+ 		font-size: 0.8em;
+ 		@include tablet {
+ 			display: inline-block;
+			padding: 0 4px;
+			font-size: 1em;
+ 		}
+ 		@include desktop {
+ 			padding: 0 8px;
+ 		}
+ 	}
+ }
+
+
+ .social-links {
+ 	float: right;
+ 	width: 30%;
+ 	padding-top: 30px;
+ 	font-size: 0.7em;
+	h4 {
+ 		margin: 0;
+ 		@extend %centered;
+ 	}
+ 	ul {
+ 		padding: 0;
+ 		margin: 0;
+ 	}
+ 	li {
+	 	display: inline-block;
+	 	padding: 4px 2px;
+ 	}
+ 	.social-img {
+ 		width: 12px;
+ 	}
+ 	@include tablet {
+ 		width: 22%;
+		margin-right: 15px;
+		font-size: 0.8em;
+		h4 {
+			float: left;
+			font-size: 1em;
+		}
+		.social-img {
+			position: relative;
+			bottom: 3px;
+			width: 15px;
+			display: block;
+			margin-right: 5px;
+		}
+ 	}
+ 	@include desktop {
+ 		width: 15%;
+ 		h4 {
+ 			font-size: 1.1em;
+ 		}
+ 		.social-img {
+			width: 18px;
+		}
+ 	}	
+ }
+

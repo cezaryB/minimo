@@ -1,0 +1,13 @@
+/* Button load-more */
+
+.btn {
+	display: inline-block;
+	padding: 0.75em 1.5em;
+	border: 1px solid ;
+	font-size: 1.4em;
+	@extend %centered;
+	&-field {
+		padding: 80px 0;
+		@extend %centered;
+	}
+}
